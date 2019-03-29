@@ -1,14 +1,13 @@
 ---
 version: 4
 
-defaults:
-  datadir: 'data'
-  data_hash: yaml_data
-
+datadir: data
 hierarchy:
   - name: 'Distribution Name'
     path: "%{facts.os.name}.yaml"
+    backend: yaml
   - name: 'Operating System Family'
     path: "%{facts.os.family}.yaml"
+    backend: yaml
   - name: 'defaults'
-    path: 'defaults.yaml'
+    backend: yaml
