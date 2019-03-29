@@ -65,5 +65,6 @@
     "prometheus",
     "monitoring",
     "metrics"
-  ]
+  ],
+  "data_provider": "hiera"
 }
